@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Telemetry Console // Ritesh Kumar</title>
+    <title>GrizzlyOps Admin Console // Ritesh Kumar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" href="/images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -461,7 +461,7 @@
                     <img src="/images/logo.png" alt="Logo" style="width: 26px; height: 26px; object-fit: contain;">
                 </div>
                 <div class="brand-info">
-                    <h1>RITESH.DEV // SYSTEM ADMIN CONSOLE</h1>
+                    <h1>GRIZZLYOPS // SYSTEM ADMIN CONSOLE</h1>
                     <span>USER AUDIT TRAIL & SYSTEM TELEMETRY</span>
                 </div>
             </div>
@@ -626,7 +626,7 @@
         </div>
 
         <footer class="cyber-footer">
-            <p>Admin Operations Console // Architected by <span>Ritesh Kumar</span> | Enterprise AWS Cloud Infrastructure</p>
+            <p>GrizzlyOps Admin Operations Console // Architected by <span>Ritesh Kumar</span> | Enterprise AWS Cloud Infrastructure</p>
         </footer>
 
     </div>

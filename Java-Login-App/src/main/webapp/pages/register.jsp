@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Portal Registration // Ritesh Kumar</title>
+    <title>GrizzlyOps Portal Registration // Ritesh Kumar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" href="/images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -248,9 +248,9 @@
                 </div>
             </div>
         </div>
-        <div class="brand-badge" style="margin: 0 auto 16px auto; width: fit-content;">⚡ RITESH.DEV // SECURE REGISTRATION</div>
+        <div class="brand-badge" style="margin: 0 auto 16px auto; width: fit-content;">🕶️ GRIZZLYOPS // SECURE REGISTRATION</div>
         <h2 class="title">Create Account</h2>
-        <p class="subtitle">Join the secure cloud telemetry ecosystem</p>
+        <p class="subtitle">Join the GrizzlyOps cloud telemetry ecosystem</p>
 
         <% if (request.getAttribute("message") != null && !request.getAttribute("message").toString().isEmpty()) { 
             String msg = request.getAttribute("message").toString();

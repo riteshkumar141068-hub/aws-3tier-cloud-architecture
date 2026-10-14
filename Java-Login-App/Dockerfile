@@ -24,7 +24,7 @@ WORKDIR /app
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 # Copy compiled artifact from build stage
-COPY --from=builder /build/target/dptweb-*.war /app/app.war
+COPY --from=builder /build/target/*.war /app/app.war
 
 # Set ownership
 RUN chown -R appuser:appgroup /app

@@ -1,4 +1,4 @@
-package com.dpt.demo;
+package com.ritesh.grizzlyops;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,3 +12,4 @@ public class HomeController {
 		return new ModelAndView("home");
 	}
 }
+

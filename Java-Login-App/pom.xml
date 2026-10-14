@@ -8,12 +8,12 @@
 		<version>2.7.18</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.devopsrealtime</groupId>
-	<artifactId>dptweb</artifactId>
+	<groupId>com.ritesh.grizzlyops</groupId>
+	<artifactId>grizzlyops-portal</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-	<name>dptweb</name>
-	<description>DPT DevOps project for Spring Boot</description>
+	<name>grizzlyops-portal</name>
+	<description>GrizzlyOps - Enterprise AWS 3-Tier Containerized Microservices Platform</description>
 
 	<properties>
 		<java.version>17</java.version>

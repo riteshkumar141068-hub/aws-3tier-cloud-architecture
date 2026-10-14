@@ -1,4 +1,4 @@
-package com.dpt.demo.service;
+package com.ritesh.grizzlyops.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,11 +16,11 @@ public class UserServiceTest {
 
     @Test
     void testRegisterAndAuthenticateUser() {
-        String testUser = "testuser_" + System.currentTimeMillis();
-        String testPass = "SecurePass123!";
+        String testUser = "grizzly_user_" + System.currentTimeMillis();
+        String testPass = "GrizzlyPass123!";
 
         // Register user
-        boolean registered = userService.registerUser("John", "Doe", testUser + "@example.com", testUser, testPass);
+        boolean registered = userService.registerUser("Grizzly", "Tester", testUser + "@grizzlyops.io", testUser, testPass);
         assertTrue(registered, "User should register successfully");
 
         // Authenticate with correct credentials

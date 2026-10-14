@@ -1,10 +1,10 @@
-package com.dpt.demo;
+package com.ritesh.grizzlyops;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import com.dpt.demo.model.UserInfo;
-import com.dpt.demo.service.UserService;
+import com.ritesh.grizzlyops.model.UserInfo;
+import com.ritesh.grizzlyops.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -98,3 +98,4 @@ public class login {
 		return "NO_SESSION";
 	}
 }
+

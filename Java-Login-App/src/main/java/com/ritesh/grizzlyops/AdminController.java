@@ -1,10 +1,10 @@
-package com.dpt.demo;
+package com.ritesh.grizzlyops;
 
 import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpSession;
 
-import com.dpt.demo.service.UserService;
+import com.ritesh.grizzlyops.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -53,3 +53,4 @@ public class AdminController {
         return Map.of("error", "UNAUTHORIZED");
     }
 }
+

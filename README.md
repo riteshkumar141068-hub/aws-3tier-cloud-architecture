@@ -1,4 +1,9 @@
-# Enterprise AWS 3-Tier Web Application & DevOps Pipeline
+<div align="center">
+  <img src="Java-Login-App/src/main/webapp/images/logo.png" width="120" alt="GrizzlyOps Logo" />
+  <h1>🕶️ GrizzlyOps // Enterprise AWS 3-Tier Platform</h1>
+  <p><strong>High-Availability Cloud Telemetry, Cyberpunk 3D Dashboard & Automated GitOps Pipeline</strong></p>
+  <p>Architected & Engineered by <strong><a href="https://github.com/riteshkumar141068-hub">Ritesh Kumar</a></strong></p>
+</div>
 
 [![CI/CD Pipeline](https://github.com/riteshkumar141068-hub/aws-3tier-cloud-architecture/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/riteshkumar141068-hub/aws-3tier-cloud-architecture/actions)
 ![Java](https://img.shields.io/badge/Java-17%20LTS-orange.svg)
@@ -7,7 +12,7 @@
 ![Terraform](https://img.shields.io/badge/Terraform-1.8%2B-purple.svg)
 ![AWS](https://img.shields.io/badge/AWS-3--Tier%20Cloud-yellow.svg)
 
-A modernized, secure, and production-ready implementation of a **3-Tier Web Application deployed on AWS Infrastructure** using Terraform, Docker, and GitHub Actions.
+**GrizzlyOps** is a production-grade, highly resilient **3-Tier Cloud Architecture & Telemetry Platform** deployed on AWS infrastructure using Terraform, Docker OCI containers, and GitHub Actions. Featuring a custom 3D cyberpunk interface, real-time user audit logging, and automated infrastructure as code.
 
 ---
 
@@ -75,10 +80,14 @@ Docker will automatically:
 4. Expose the web application on `http://localhost:8080`.
 
 ### Step 2: Access Endpoints
-- **Home Page:** [http://localhost:8080/](http://localhost:8080/)
-- **Register:** [http://localhost:8080/register](http://localhost:8080/register)
-- **Login:** [http://localhost:8080/login](http://localhost:8080/login)
-- **Health Check:** [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health)
+- **Landing Page:** [http://localhost:8080/](http://localhost:8080/)
+- **Register Account:** [http://localhost:8080/register](http://localhost:8080/register)
+- **Sign In:** [http://localhost:8080/login](http://localhost:8080/login)
+- **User Telemetry Portal:** [http://localhost:8080/user](http://localhost:8080/user)
+- **Admin Operations Console:** [http://localhost:8080/admin](http://localhost:8080/admin)
+  - **Admin Username:** `ritesh@soft`
+  - **Admin Password:** `Ritesh@admin121`
+- **Actuator Health API:** [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health)
 
 ---
 
@@ -156,14 +165,16 @@ rds_endpoint = "prod-database.xxxxxx.us-east-1.rds.amazonaws.com:3306"
 │   ├── Dockerfile                   # Multi-stage production container build
 │   ├── .dockerignore                # Container build exclusions
 │   ├── pom.xml                      # Maven project configuration & dependencies
-│   ├── src/main/java/com/dpt/demo/
+│   ├── src/main/java/com/ritesh/grizzlyops/
 │   │   ├── config/SecurityConfig.java # Spring Security & BCrypt configuration
-│   │   ├── service/UserService.java  # Thread-safe service with parameterized SQL
-│   │   ├── HomeController.java      # Route controller for / and /home
-│   │   ├── login.java               # Secure login controller
-│   │   ├── register.java            # Secure registration controller
-│   │   ├── MyWebAppApplication.java # Bootstrap entrypoint
-│   │   └── ServletInitializer.java  # WAR container initializer
+│   │   ├── model/UserInfo.java        # User data model & RBAC representation
+│   │   ├── service/UserService.java   # Telemetry, audit trail, bcrypt auth & heartbeat
+│   │   ├── AdminController.java       # RBAC-secured Admin dashboard & CSV export
+│   │   ├── HomeController.java        # Hero landing page controller (/ and /home)
+│   │   ├── login.java                 # Secure login, audit recorder & heartbeat endpoint
+│   │   ├── register.java              # User registration controller
+│   │   ├── GrizzlyOpsApplication.java # Bootstrap entrypoint
+│   │   └── ServletInitializer.java    # WAR container initializer
 │   ├── src/main/resources/
 │   │   ├── application.properties   # Environment-driven properties & HikariCP
 │   │   └── schema.sql               # Database table auto-initialization script

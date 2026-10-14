@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Portal Login // Ritesh Kumar</title>
+    <title>GrizzlyOps Portal Login // Ritesh Kumar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" href="/images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -253,9 +253,9 @@
                 </div>
             </div>
         </div>
-        <div class="brand-badge" style="margin: 0 auto 16px auto; width: fit-content;">⚡ RITESH.DEV // AWS PLATFORM</div>
+        <div class="brand-badge" style="margin: 0 auto 16px auto; width: fit-content;">🕶️ GRIZZLYOPS // SECURE ACCESS</div>
         <h2 class="title">Sign In</h2>
-        <p class="subtitle">Access the secure cloud telemetry dashboard</p>
+        <p class="subtitle">Enterprise Cloud Telemetry & Authentication</p>
 
         <% if (request.getAttribute("errorMessage") != null && !request.getAttribute("errorMessage").toString().isEmpty()) { %>
             <div class="error-banner">${errorMessage}</div>
@@ -283,7 +283,7 @@
             </div>
 
             <div class="creator-tag">
-                Architected by <span>Ritesh Kumar</span> // SWE
+                Architected by <span>Ritesh Kumar</span> // GrizzlyOps Lead Engineer
             </div>
         </form>
     </div>

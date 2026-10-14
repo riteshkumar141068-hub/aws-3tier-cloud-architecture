@@ -1,6 +1,6 @@
-package com.dpt.demo;
+package com.ritesh.grizzlyops;
 
-import com.dpt.demo.service.UserService;
+import com.ritesh.grizzlyops.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -45,3 +45,4 @@ public class register {
 		return mv;
 	}
 }
+

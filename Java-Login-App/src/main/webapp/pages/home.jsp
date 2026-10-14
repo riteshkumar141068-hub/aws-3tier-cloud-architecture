@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise AWS 3-Tier Platform // Ritesh Kumar</title>
+    <title>GrizzlyOps Cloud Platform // Ritesh Kumar</title>
+    <link rel="icon" type="image/png" href="/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <style>
@@ -205,8 +205,15 @@
     <div class="custom-cursor-ring" id="cursor-ring"></div>
 
     <div class="hero-card" id="tilt-card">
-        <div class="hero-badge">⚡ PRODUCTION CLOUD ARCHITECTURE</div>
-        <h1 class="hero-title">Enterprise AWS 3-Tier <span>Web Platform</span></h1>
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <div style="width: 88px; height: 88px; border-radius: 26px; background: linear-gradient(135deg, #00f0ff, #8a2be2); padding: 2.5px; box-shadow: 0 0 30px rgba(0, 240, 255, 0.5);">
+                <div style="width: 100%; height: 100%; background: #080d1a; border-radius: 23px; display: flex; align-items: center; justify-content: center; padding: 8px;">
+                    <img src="/images/logo.png" alt="GrizzlyOps" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+        <div class="hero-badge">🕶️ GRIZZLYOPS // PRODUCTION CLOUD MESH</div>
+        <h1 class="hero-title">GrizzlyOps Enterprise <span>Cloud Platform</span></h1>
         <p class="hero-desc">
             High-availability cloud portal built with Spring Boot, automated with Terraform, containerized via Docker, and orchestrated on AWS Multi-AZ infrastructure.
         </p>
@@ -249,7 +256,7 @@
             const centerX = rect.width / 2, centerY = rect.height / 2;
             const rotateX = ((y - centerY) / centerY) * -8;
             const rotateY = ((x - centerX) / centerX) * 8;
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            card.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale3d(1.02, 1.02, 1.02)';
         });
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
@@ -280,7 +287,7 @@
                     const dist = Math.sqrt(dx * dx + dy * dy);
                     if (dist < 120) {
                         ctx.beginPath();
-                        ctx.strokeStyle = `rgba(0, 240, 255, ${0.12 * (1 - dist / 120)})`;
+                        ctx.strokeStyle = 'rgba(0, 240, 255, ' + (0.12 * (1 - dist / 120)) + ')';
                         ctx.lineWidth = 0.8;
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);

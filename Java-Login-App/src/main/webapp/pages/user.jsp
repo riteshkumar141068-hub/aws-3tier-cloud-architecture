@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Cloud Portal // Ritesh Kumar</title>
+    <title>GrizzlyOps Cloud Portal // Ritesh Kumar</title>
     <!-- Modern Tech Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" href="/images/logo.png">
@@ -514,8 +514,8 @@
                     <img src="/images/logo.png" alt="Logo" style="width: 26px; height: 26px; object-fit: contain;">
                 </div>
                 <div class="brand-info">
-                    <h1>RITESH.DEV // CLOUD PORTAL</h1>
-                    <span>ENTERPRISE AWS 3-TIER PLATFORM</span>
+                    <h1>GRIZZLYOPS // CLOUD PORTAL</h1>
+                    <span>ENTERPRISE AWS 3-TIER ARCHITECTURE</span>
                 </div>
             </div>
 
@@ -539,7 +539,7 @@
             
             <!-- Left Card: Developer Profile & Identity -->
             <div class="card-3d" data-tilt>
-                <span class="card-tag">// LEAD ARCHITECT & ENGINEER</span>
+                <span class="card-tag">// GRIZZLYOPS LEAD ARCHITECT & ENGINEER</span>
                 
                 <div class="profile-header">
                     <div class="avatar-frame">
@@ -554,7 +554,7 @@
                 </div>
 
                 <p class="profile-bio">
-                    Architected and engineered this enterprise-grade 3-Tier cloud application. Designed with high-availability AWS VPC topologies, automated Terraform infrastructure, containerized microservices, and end-to-end GitOps delivery.
+                    Architected and engineered GrizzlyOps, an enterprise-grade 3-Tier cloud application. Designed with high-availability AWS VPC topologies, automated Terraform infrastructure, containerized microservices, and end-to-end GitOps delivery.
                 </p>
 
                 <div class="tech-stack-wrap">
@@ -647,7 +647,7 @@
 
         <!-- Footer -->
         <footer class="cyber-footer">
-            <p>Designed & Architected by <a href="https://github.com/riteshkumar141068-hub" target="_blank">Ritesh Kumar</a> | &copy; 2026 All Rights Reserved.</p>
+            <p>GrizzlyOps Enterprise Cloud Platform // Architected by <a href="https://github.com/riteshkumar141068-hub" target="_blank">Ritesh Kumar</a> | &copy; 2026 All Rights Reserved.</p>
         </footer>
 
     </div>

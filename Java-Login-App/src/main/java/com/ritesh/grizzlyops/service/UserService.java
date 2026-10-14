@@ -1,4 +1,4 @@
-package com.dpt.demo.service;
+package com.ritesh.grizzlyops.service;
 
 import java.lang.management.ManagementFactory;
 import java.sql.Connection;
@@ -15,7 +15,7 @@ import java.util.Map;
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 
-import com.dpt.demo.model.UserInfo;
+import com.ritesh.grizzlyops.model.UserInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -345,3 +345,4 @@ public class UserService {
         return "Browser";
     }
 }
+

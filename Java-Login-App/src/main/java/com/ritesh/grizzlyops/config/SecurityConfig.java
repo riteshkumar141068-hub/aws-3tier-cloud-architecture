@@ -1,4 +1,4 @@
-package com.dpt.demo.config;
+package com.ritesh.grizzlyops.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
