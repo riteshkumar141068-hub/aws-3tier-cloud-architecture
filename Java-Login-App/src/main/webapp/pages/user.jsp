@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <title>DevOps Cloud Portal // Ritesh Kumar</title>
     <!-- Modern Tech Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="/images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
     <style>
@@ -509,7 +510,9 @@
         <!-- Navigation Bar -->
         <header class="cyber-nav">
             <div class="brand-hub">
-                <div class="brand-badge">⚡</div>
+                <div class="brand-badge" style="padding: 4px; display: flex; align-items: center; justify-content: center;">
+                    <img src="/images/logo.png" alt="Logo" style="width: 26px; height: 26px; object-fit: contain;">
+                </div>
                 <div class="brand-info">
                     <h1>RITESH.DEV // CLOUD PORTAL</h1>
                     <span>ENTERPRISE AWS 3-TIER PLATFORM</span>
@@ -524,7 +527,10 @@
                 <div style="font-size: 0.9rem; font-weight: 600; color: #fff;">
                     User: <span style="color: var(--cyan-glow);">${username}</span>
                 </div>
-                <a href="login" class="logout-btn">Log Out ⏻</a>
+                <c:if test="${sessionScope.role == 'ROLE_ADMIN' || role == 'ROLE_ADMIN'}">
+                    <a href="/admin" class="logout-btn" style="border-color: rgba(138,43,226,0.6); background: rgba(138,43,226,0.2); color: #d8b4fe;">⚡ Admin Console</a>
+                </c:if>
+                <a href="/logout" class="logout-btn">Log Out ⏻</a>
             </div>
         </header>
 
@@ -537,7 +543,9 @@
                 
                 <div class="profile-header">
                     <div class="avatar-frame">
-                        <div class="avatar-inner">RK</div>
+                        <div class="avatar-inner" style="padding: 6px; overflow: hidden;">
+                            <img src="/images/logo.png" alt="Ritesh Kumar" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px; filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.4));">
+                        </div>
                     </div>
                     <div>
                         <h2 class="profile-name">Ritesh Kumar</h2>
@@ -705,7 +713,7 @@
                 const rotateX = ((y - centerY) / centerY) * -7;
                 const rotateY = ((x - centerX) / centerX) * 7;
                 
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.015, 1.015, 1.015)`;
+                card.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale3d(1.015, 1.015, 1.015)';
             });
 
             card.addEventListener('mouseleave', () => {
@@ -751,7 +759,7 @@
 
                     if (dist < 130) {
                         ctx.beginPath();
-                        ctx.strokeStyle = `rgba(0, 240, 255, ${0.15 * (1 - dist / 130)})`;
+                        ctx.strokeStyle = 'rgba(0, 240, 255, ' + (0.15 * (1 - dist / 130)) + ')';
                         ctx.lineWidth = 0.8;
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
@@ -777,6 +785,13 @@
             requestAnimationFrame(drawParticles);
         }
         drawParticles();
+
+        // Real-time active visit duration heartbeat (pings server every 15 seconds)
+        setInterval(function() {
+            try {
+                fetch('/api/heartbeat', { method: 'POST' }).catch(function() {});
+            } catch(e) {}
+        }, 15000);
     </script>
 </body>
 </html>

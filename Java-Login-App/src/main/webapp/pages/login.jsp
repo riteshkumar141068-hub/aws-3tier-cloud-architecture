@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Portal Login // Ritesh Kumar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="/images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <style>
@@ -246,7 +246,14 @@
     <div class="custom-cursor-ring" id="cursor-ring"></div>
 
     <div class="login-card" id="tilt-card">
-        <div class="brand-badge">⚡ AWS 3-TIER PLATFORM</div>
+        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
+            <div style="width: 76px; height: 76px; border-radius: 22px; background: linear-gradient(135deg, #00f0ff, #8a2be2); padding: 2.5px; box-shadow: 0 0 25px rgba(0, 240, 255, 0.45);">
+                <div style="width: 100%; height: 100%; background: #080d1a; border-radius: 19px; display: flex; align-items: center; justify-content: center; padding: 6px;">
+                    <img src="/images/logo.png" alt="Ritesh Kumar" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+        <div class="brand-badge" style="margin: 0 auto 16px auto; width: fit-content;">⚡ RITESH.DEV // AWS PLATFORM</div>
         <h2 class="title">Sign In</h2>
         <p class="subtitle">Access the secure cloud telemetry dashboard</p>
 
@@ -314,7 +321,7 @@
             const centerY = rect.height / 2;
             const rotateX = ((y - centerY) / centerY) * -9;
             const rotateY = ((x - centerX) / centerX) * 9;
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            card.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale3d(1.02, 1.02, 1.02)';
         });
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
@@ -347,7 +354,7 @@
                     const dist = Math.sqrt(dx * dx + dy * dy);
                     if (dist < 120) {
                         ctx.beginPath();
-                        ctx.strokeStyle = `rgba(0, 240, 255, ${0.12 * (1 - dist / 120)})`;
+                        ctx.strokeStyle = 'rgba(0, 240, 255, ' + (0.12 * (1 - dist / 120)) + ')';
                         ctx.lineWidth = 0.8;
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);

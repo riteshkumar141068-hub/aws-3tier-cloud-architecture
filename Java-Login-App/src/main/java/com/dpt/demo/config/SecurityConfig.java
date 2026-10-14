@@ -22,7 +22,7 @@ public class SecurityConfig {
         http
             .csrf().disable()
             .authorizeRequests()
-                .antMatchers("/", "/home", "/login", "/register", "/pages/**", "/actuator/**", "/css/**", "/js/**").permitAll()
+                .antMatchers("/", "/home", "/login", "/user", "/register", "/logout", "/admin/**", "/api/**", "/pages/**", "/actuator/**", "/css/**", "/js/**", "/images/**", "/favicon.ico").permitAll()
                 .anyRequest().authenticated()
             .and()
             .formLogin().disable()
