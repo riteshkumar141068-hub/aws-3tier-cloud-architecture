@@ -1,6 +1,6 @@
 <div align="center">
   <img src="Java-Login-App/src/main/webapp/images/logo.png" width="120" alt="GrizzlyOps Logo" />
-  <h1>🕶️ GrizzlyOps // Enterprise AWS 3-Tier Platform</h1>
+  <h1>🕶️ GrizzlyOps // Enterprise AWS Cloud Platform</h1>
   <p><strong>High-Availability Cloud Telemetry, Cyberpunk 3D Dashboard & Automated GitOps Pipeline</strong></p>
   <p>Architected & Engineered by <strong><a href="https://github.com/riteshkumar141068-hub">Ritesh Kumar</a></strong></p>
 </div>
