@@ -85,8 +85,6 @@ Docker will automatically:
 - **Sign In:** [http://localhost:8080/login](http://localhost:8080/login)
 - **User Telemetry Portal:** [http://localhost:8080/user](http://localhost:8080/user)
 - **Admin Operations Console:** [http://localhost:8080/admin](http://localhost:8080/admin)
-  - **Admin Username:** `ritesh@soft`
-  - **Admin Password:** `Ritesh@admin121`
 - **Actuator Health API:** [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health)
 
 ---
