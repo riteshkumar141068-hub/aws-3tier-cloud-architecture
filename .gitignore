@@ -1,0 +1,43 @@
+# Maven & Build artifacts
+**/target/
+*.class
+*.jar
+*.war
+!gradle/wrapper/*.jar
+
+# Terraform artifacts
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+crash.log
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp files
+*.log
+scratch/
+
+# Agent & Workspace files
+.agent/
+.agents/
+.gemini/
+.gsd/
+GSD-STYLE.md
+PROJECT_RULES.md
+VERSION
+adapters/
+model_capabilities.yaml
+package-lock.json
+scripts/
