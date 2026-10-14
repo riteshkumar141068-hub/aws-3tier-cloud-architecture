@@ -19,10 +19,10 @@ module "vpc" {
   source = "./modules/vpc"
 
   environment     = var.environment
-  vpc_cidr       = var.vpc_cidr
+  vpc_cidr        = var.vpc_cidr
   public_subnets  = var.public_subnets
   private_subnets = var.private_subnets
-  azs            = var.availability_zones
+  azs             = var.availability_zones
 }
 
 # Security Module
@@ -30,7 +30,7 @@ module "security" {
   source = "./modules/security"
 
   environment             = var.environment
-  vpc_id                 = module.vpc.vpc_id
+  vpc_id                  = module.vpc.vpc_id
   allowed_ssh_cidr_blocks = var.allowed_ssh_cidr_blocks
 }
 
@@ -38,7 +38,7 @@ module "security" {
 module "rds" {
   source = "./modules/rds"
 
-  environment         = var.environment
+  environment        = var.environment
   vpc_id             = module.vpc.vpc_id
   subnet_ids         = module.vpc.private_subnet_ids
   security_group_ids = [module.security.db_security_group_id]
@@ -61,20 +61,20 @@ module "alb" {
 module "asg" {
   source = "./modules/asg"
 
-  environment         = var.environment
+  environment        = var.environment
   vpc_id             = module.vpc.vpc_id
   private_subnet_ids = module.vpc.private_subnet_ids
   security_group_ids = [module.security.app_security_group_id]
   target_group_arns  = [module.alb.target_group_arn]
   instance_type      = var.instance_type
   key_name           = var.key_name
-  min_size          = var.asg_min_size
-  max_size          = var.asg_max_size
-  desired_capacity  = var.asg_desired_capacity
-  db_endpoint       = module.rds.rds_instance_address
-  db_name           = var.db_name
-  db_username       = var.db_username
-  db_password       = var.db_password
+  min_size           = var.asg_min_size
+  max_size           = var.asg_max_size
+  desired_capacity   = var.asg_desired_capacity
+  db_endpoint        = module.rds.rds_instance_address
+  db_name            = var.db_name
+  db_username        = var.db_username
+  db_password        = var.db_password
 }
 
 # CloudWatch Module

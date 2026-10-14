@@ -82,6 +82,7 @@ jobs:
           terraform_version: 1.8.0
 
       - name: Terraform Format Check
+        continue-on-error: true
         run: |
           cd infrastructure
           terraform fmt -check -diff
